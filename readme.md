@@ -66,7 +66,7 @@ This will send a message to the Kafka topic <kafka-topic>.
 
 #### 3.1. Implementing the consumer
 
-[consumer.go](https://github.com/matiassingers/awesome-readme)
+[consumer.go](https://github.com/shabrul2451/Kafka-with-go/blob/main/consumer/consumer.go)
 
 #### 3.2. Run the consumer
 ```
@@ -78,10 +78,12 @@ this will listen for messages from the <kafka-topic>
 
 #### 4.1. Adding headers to kafka Messages
 
-[producer-with-custom-header.go](https://github.com/matiassingers/awesome-readme)
+[producer-with-custom-header.go](https://github.com/shabrul2451/Kafka-with-go/blob/main/producer/producer-with-custom-header.go)
 
 you can add as much header as you want.
 
 #### 4.2. Custom Partitioning
 
 By default, Kafka decides which partition to send the message to, based on the message key. However, you can explicitly set the partition in the ProducerMessage.
+
+[producer-with-custom-partition.go](https://github.com/shabrul2451/Kafka-with-go/blob/main/producer/producer-with-custom-partition.go)
