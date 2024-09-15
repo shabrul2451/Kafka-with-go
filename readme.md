@@ -52,7 +52,7 @@ go get github.com/IBM/sarama
 ```
 
 #### 2.2. Implementing the Producer
-[producer.go](https://github.com/matiassingers/awesome-readme)
+[producer.go](https://github.com/shabrul2451/Kafka-with-go/blob/main/producer/producer.go)
 
 #### 2.3. Run the Producer
 
