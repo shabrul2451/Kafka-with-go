@@ -1,5 +1,14 @@
 # Kafka with Go: Complete Documentation with Docker Setup
 
+### Use cases
+- **Messaging:**  In comparison to most messaging systems Kafka has better throughput, built-in partitioning, replication, and fault-tolerance which makes it a good solution for large scale message processing applications.
+- **Website Activity Tracking:** The original use case for Kafka was to be able to rebuild a user activity tracking pipeline as a set of real-time publish-subscribe feeds.
+- **Metrics:** Kafka is often used for operational monitoring data. This involves aggregating statistics from distributed applications to produce centralized feeds of operational data.
+- **Log Aggregation:** Log aggregation typically collects physical log files off servers and puts them in a central place (a file server or HDFS perhaps) for processing. Kafka abstracts away the details of files and gives a cleaner abstraction of log or event data as a stream of messages.
+- **Stream Processing:** Many users of Kafka process data in processing pipelines consisting of multiple stages, where raw input data is consumed from Kafka topics and then aggregated, enriched, or otherwise transformed into new topics for further consumption or follow-up processing.
+- **Event Sourcing:** Event sourcing is a style of application design where state changes are logged as a time-ordered sequence of records. Kafka's support for very large stored log data makes it an excellent backend for an application built in this style.
+- **Commit Log:** Kafka can serve as a kind of external commit-log for a distributed system.
+
 ### Table of contents
 1. Docker setup for kafka
 2. Go kafka producer
@@ -8,7 +17,6 @@
    - Adding headers to kafka messages
    - Custom partitioning
    - Handling offsets in consumer
-
 
 ### 1. Docker Setup for Kafka
 #### 1.1. Docker compise setup
